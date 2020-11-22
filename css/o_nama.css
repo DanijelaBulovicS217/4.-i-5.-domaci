@@ -1,0 +1,71 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+
+
+.container
+{
+    width: 100%;
+}
+
+
+.tekst
+{
+   /* border: 1px solid black; */
+    height: 400px;
+}
+
+
+.galerija
+{
+    border: 1px solid black;
+    height: 340px;
+}
+
+
+.naslov
+{
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+.clanak
+{
+    text-align: justify;
+    font-family: fantasy;
+    font-size: 100%;
+    background-color: blanchedalmond;
+
+}
+
+.gallery
+{
+    margin: 10px 50px;
+}
+
+.gallery img
+{
+    width: 335px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+
+.gallery img:hover
+{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .gallery {width: 200px; float: left;}
+    
+  }

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".navmenu").slideToggle(400);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".navmenu").css("display","block");
+                }
+            })
+        })
+    </script>
+   
+  
+</head>
+<body>
+    <div class="header">
+        <div class="moto">
+           <p>Dobrodošli!</p>
+         </div>
+         <a href="index.html" class="logo"><img class="logo_slika" src="images/logo.png" alt="Logo"></a>
+       <br>
+       <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+       <div class="navmenu">
+       
+           <ul>
+               <a href="#">Pocetna</a>
+               <a href="o_nama.html">O nama</a>
+               <a href="#">Galerija</a>
+               <a href="#">Proizvodi</a>
+               <a href="kontakt.html">Kontakt</a>
+               
+           </ul>
+     
+        </div>  
+        
+    </div>
+
+    <br><br>
+
+<div class="glavna">
+
+    <div class="leftsidebar">
+        <div class="vest">
+            <h1>Vesti:</h1>
+            <h3>Premijera:Samsung Galaxy S20</h3>
+             <img class="vest_slika" src="images/img.png" alt="Samsung">
+        </div>
+     
+   
+ </div>
+
+
+ <div class="centralpart">
+              
+    <div class="proizvod">
+        <h2>Samsung S10</h2>
+        <img src="images/s10.jpg" alt="S10">
+                
+                <form action="">
+                    <p>Kolicina: <input type="number" name="kolicina"></p>
+                    <p>Cena: 790eur</p>
+                    <input type="submit" value="Dodaj u korpu">
+                </form>
+   
+</div>
+<div class="proizvod">
+    <h2>Samsung S9</h2>
+        <img src="images/s9.jpg" alt="S9">
+                
+                <form action="">
+                    <p>Kolicina: <input type="number" name="kolicina"></p>
+                    <p>Cena: 900eur</p>
+                    <input type="submit" value="Dodaj u korpu">
+                </form>
+</div>
+<div class="proizvod">
+    <h2>Samsung S8</h2>
+    <img src="images/s8.jpg" alt="S8">
+            
+            <form action="">
+                <p>Kolicina: <input type="number" name="kolicina"></p>
+                <p>Cena: 870eur</p>
+                <input type="submit" value="Dodaj u korpu">
+            </form>
+</div>
+<div class="proizvod">
+    <h2>Samsung S7</h2>
+    <img src="images/s7.jpg" alt="S7">
+            
+            <form action="">
+                <p>Kolicina: <input type="number" name="kolicina"></p>
+                <p>Cena: 550eur</p>
+                <input type="submit" value="Dodaj u korpu">
+            </form>
+</div>
+<div class="proizvod">
+    <h2>Samsung S6</h2>
+    <img src="images/s6.jpg" alt="S6">
+            
+            <form action="">
+                <p>Kolicina: <input type="number" name="kolicina"></p>
+                <p>Cena: 350eur</p>
+                <input type="submit" value="Dodaj u korpu">
+            </form>
+</div>
+<div class="proizvod">
+    <h2>Samsung S5</h2>
+    <img src="images/s5.jpg" alt="S5">
+            
+            <form action="">
+                <p>Kolicina: <input type="number" name="kolicina"></p>
+                <p>Cena: 290 eur</p>
+                <input type="submit" value="Dodaj u korpu">
+            </form>
+</div>
+
+
+
+</div>
+
+
+<div class="rightSidebar">
+    <form action="" method="post">
+        <hr>
+        <h1>Registracija</h1>
+        <hr>
+        <label for="Ime"><b>Ime:</b></label> <br>
+        <input type="text" placeholder="Ime" name="Ime" required>
+       
+        <label for="Prezime"><b>Prezime:</b></label>
+        <input type="text" placeholder="Prezime" name="Prezime" required> 
+       <b><p>Pol:</b></p>
+      <select>
+          <option value="Muski">Muski</option>
+           <option value="Zenski">Zenski</option> <br><br>
+       </select>
+       <br>
+<br>
+        <label for="Email adresa"><b>Email:</b></label>
+        <input type="text" placeholder="Email adresa" name="email" required> <br>
+    
+        <label for="sifra"><b>Lozinka:</b></label>
+        <input type="password" placeholder="Lozinka" name="psw" required> <br>
+    
+        <label for="psw-repeat"><b>Ponovite lozinku:</b></label> <br>
+        <input type="password" placeholder="Ponovite Lozinku" name="psw-repeat" required>
+        
+      
+       <button type="submit" class="registerbtn"><b>Registrujte se</b></button>
+        
+       
+    </form>
+</div>
+</div>
+
+<div class="footer">
+    <p>Danijela Bulovic S2/17 dbulovic17@raf.rs Knez Mihajlova 6 0602525989</p>
+</div>
+
+
+</body>
+</html>

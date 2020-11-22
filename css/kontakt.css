@@ -1,0 +1,55 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+.container
+{
+    width: 100%;
+}
+
+.mapa
+{float: left;
+    width: 50%;
+}
+
+.kontakt_forma
+{
+    width: 50%;
+    float: right;
+}
+
+
+
+@media only screen and (max-width:1368px)
+{
+    .kontakt_forma
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .mapa
+    {
+        width: 85%;
+    }
+
+
+
+    
+@media only screen and (max-width:1368px)
+{
+    .mapa
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .kontakt_forma
+    {
+        width: 100%;
+    }
+
+}
+}

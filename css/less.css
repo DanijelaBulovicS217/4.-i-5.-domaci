@@ -1,0 +1,16 @@
+@slova =fantasy;
+@pozadina Boja=whitesmoke;
+@glavna Boja=white;
+@footer BojaSlova=black;
+@moto VelicinaSlova=20px;
+@vest SlikaVisina=300px;
+@hamburger Sirina=50px;
+.sideBar {
+  width: 15%;
+}
+.displayPrikaz {
+  display: inline-block;
+}
+.headerPadding {
+  padding: 20px 10px;
+}
